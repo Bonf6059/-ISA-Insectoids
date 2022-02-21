@@ -3,7 +3,7 @@
 mod- better insectoids:
 - Buildable hives ✔
 - Insectoids products
-- every bug has Disease Immunity
+- every bug has Disease Immunity ✔
 - Prothesys 
 - Patches 
 - no new textures 
