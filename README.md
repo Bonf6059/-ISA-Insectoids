@@ -6,4 +6,4 @@ mod- better insectoids:
 - Prothesys 
 - Patches 
 - no new textures 
-- new megascarab/fire fly/glowing megascarab?
+- new fire fly/glowing megascarab butt?
