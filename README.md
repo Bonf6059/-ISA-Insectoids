@@ -2,11 +2,13 @@
 
 mod- better insectoids:
 - Buildable hives ✔
-- Insectoids products 
+- Insectoids products
+- every bug has Disease Immunity
 - Prothesys 
 - Patches 
 - no new textures 
 - new fire fly/glowing megascarab butt?
+- new corpes decayer, acid immune, infecter bug (links below)
 
 
 
