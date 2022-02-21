@@ -15,7 +15,19 @@ mod with better insectoids:
 - story teller?
 
 
-
+                Patch necessarie
+                (Cambiare Composizione corpo spelopede)
+(trovato in vfe - insectoids gigascorpio)
+<tool>
+      <li>
+        <capacities>
+          <li>VFEI_ToxicSting</li>
+        </capacities>
+        <cooldownTime>2</cooldownTime>
+        <power>7</power>
+        <linkedBodyPartsGroup>VFEI_Sting</linkedBodyPartsGroup>
+      </li>
+</tool>
               #USEFULL LINKS (VEF)
 https://github.com/AndroidQuazar/VanillaExpandedFramework/wiki/Metamorphosis
 
