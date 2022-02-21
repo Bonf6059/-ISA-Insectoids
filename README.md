@@ -1,18 +1,17 @@
 # -ISA-Insectoids_Addons
 
-mod- better insectoids:
+mod with better insectoids:
 - Buildable hives ✔
 - Insectoids products ✔
 - every bug has Disease Immunity ✔
-- Prothesys 
-- Patches 
 - new traders ✔
+- megascarab overhaul (insect jelly production) ✔
+- spelopede overhaul (spits and resist acid) 1/2✔
+- megaspider overhaul (dig once a day)✔
 - no new textures ?
 - new fire fly/glowing megascarab butt?
 - new corpes decayer, acid immune, infecter bug (links below)
-- megascarab overhaul (insect jelly production) ✔
-- spelopede overhaul (spits and resist acid) 1/2✔
-- megaspider overhaul (dig once a day, stat equal or better than bear) 1/2✔
+- Prothesys 
 
 
 
