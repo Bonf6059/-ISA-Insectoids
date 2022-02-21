@@ -2,7 +2,7 @@
 <Defs>
 
 	<ResearchProjectDef>
-		<defName>InsectJellyMound</defName>
+		<defName>ISA_InsectJellyMound</defName>
 		<label>insect jelly mound</label>
 		<description>Build an hive that produces insect jelly.</description>
 		<baseCost>750</baseCost>
