@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+	<ResearchProjectDef>
+		<defName>InsectJellyMound</defName>
+		<label>insect jelly mound</label>
+		<description>Build an hive that produces insect jelly.</description>
+		<baseCost>750</baseCost>
+		<techLevel>Neolithic</techLevel>
+		<researchViewX>1.00</researchViewX>
+		<researchViewY>5.15</researchViewY>
+	</ResearchProjectDef>
+  
+</Defs>
