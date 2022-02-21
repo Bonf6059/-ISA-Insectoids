@@ -1,0 +1,123 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+  
+  <!-- Add new caravan -->      <!-- Thank you Criz#2714 for the help with this patch -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
+    <value>
+    <li>ISA_Caravan_Entomologists</li>
+    </value>
+  </Operation>
+
+  
+  <!-- Add new abilities to insectoids -->
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>/Defs/[]</xpath>
+    <value>
+    <li></li>
+    </value>
+  </Operation>
+
+  
+  <li Class="AnimalBehaviours.CompProperties_AcidImmunity">		
+	</li>
+  <DamageDef>
+		<defName>MM_AcidicBreath</defName>
+		<label>acidic breath</label>
+		<workerClass>DamageWorker_AddInjury</workerClass>
+		<externalViolence>true</externalViolence>
+		<hediff>VEF_AcidBurn</hediff>
+		<defaultDamage>1</defaultDamage>
+
+		<deathMessage>{0} has been poisoned to death.</deathMessage>
+		<additionalHediffs>
+			<li>
+				<hediff>VEF_AcidBuildup</hediff>
+				<severityPerDamageDealt>0.01</severityPerDamageDealt>
+				<victimSeverityScaling>ToxicSensitivity</victimSeverityScaling>
+			</li>
+		</additionalHediffs>
+
+		<harmAllLayersUntilOutside>true</harmAllLayersUntilOutside>
+
+		<armorCategory>Heat</armorCategory>
+	</DamageDef>
+  
+  	<li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
+		<hediffsToRemove>
+			<li>Animal_Plague</li>
+			<li>Animal_Flu</li>
+			<li>AB_AnimalSporesAllergy</li>
+		</hediffsToRemove>
+		<tickInterval>2000</tickInterval>
+	</li>
+  
+  <li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+		<customThingToDig>			
+			<li>ChunkSandstone</li>
+			<li>ChunkGranite</li>
+			<li>ChunkLimestone</li>
+			<li>ChunkSlate</li>
+			<li>ChunkMarble</li>
+			<li>ChunkSandstone</li>
+			<li>ChunkGranite</li>
+			<li>ChunkLimestone</li>
+			<li>ChunkSlate</li>
+			<li>ChunkMarble</li>
+			<li>ChunkSandstone</li>
+			<li>ChunkGranite</li>
+			<li>ChunkLimestone</li>
+			<li>ChunkSlate</li>
+			<li>ChunkMarble</li>
+			<li>ChunkSandstone</li>
+			<li>ChunkGranite</li>
+			<li>ChunkLimestone</li>
+			<li>ChunkSlate</li>
+			<li>ChunkMarble</li>
+			<li>ChunkSandstone</li>
+			<li>ChunkGranite</li>
+			<li>ChunkLimestone</li>
+			<li>ChunkSlate</li>
+			<li>Steel</li>
+			<li>Steel</li>
+			<li>Jade</li>
+			<li>Gold</li>
+			<li>Plasteel</li>
+			<li>Silver</li>			
+		</customThingToDig>
+		<customAmountToDig>				
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>1</li>
+			<li>25</li>
+			<li>25</li>
+			<li>10</li>
+			<li>10</li>
+			<li>10</li>
+			<li>10</li>		
+		</customAmountToDig>
+		<ticksToDig>60000</ticksToDig>
+	</li>
+</Patch>
