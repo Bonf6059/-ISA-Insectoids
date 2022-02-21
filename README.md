@@ -1,4 +1,4 @@
-# -ISA-Insectoids
+# -ISA-Insectoids_Addons
 
 mod- better insectoids:
 - Buildable hives ✔
@@ -10,7 +10,7 @@ mod- better insectoids:
 
 
 
-              USEFULL LINKS (VEF)
+              #USEFULL LINKS (VEF)
 https://github.com/AndroidQuazar/VanillaExpandedFramework/wiki/Metamorphosis
 
 https://github.com/AndroidQuazar/VanillaExpandedFramework/wiki/Acid-Attacks-and-Acid-Immunity
