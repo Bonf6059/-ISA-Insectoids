@@ -6,12 +6,13 @@ mod with better insectoids:
 - every bug has Disease Immunity ✔
 - new traders ✔
 - megascarab overhaul (insect jelly production) ✔
-- spelopede overhaul (spits and resist acid) 1/2✔
+- spelopede overhaul (spits and resist acid) ❌✔
 - megaspider overhaul (dig once a day)✔
 - no new textures ?
 - new fire fly/glowing megascarab butt?
 - new corpes decayer, acid immune, infecter bug (links below)
 - Prothesys 
+- story teller?
 
 
 
