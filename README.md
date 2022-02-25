@@ -6,29 +6,14 @@ mod with better insectoids:
 - every bug has Disease Immunity ✔
 - new traders ✔
 - megascarab overhaul (insect jelly production) ✔
-- spelopede overhaul (spits and resist acid) ❌✔
+- spelopede overhaul (spits and resist acid [use vanilla venom]) ❌✔
 - megaspider overhaul (dig once a day)✔
 - no new textures ?
 - new fire fly/glowing megascarab butt?
 - new corpes decayer, acid immune, infecter bug (links below)
 - Prothesys 
 - story teller?
-- cavare la patch degli insetti e creare nuovi insetti con tutto uguale, tranne def name, e con le abilità (chiamati uguali)
 
-
-                Patch necessarie
-                (Cambiare Composizione corpo spelopede)
-(trovato in vfe - insectoids gigascorpio)
-<tool>
-      <li>
-        <capacities>
-          <li>VFEI_ToxicSting</li>
-        </capacities>
-        <cooldownTime>2</cooldownTime>
-        <power>7</power>
-        <linkedBodyPartsGroup>VFEI_Sting</linkedBodyPartsGroup>
-      </li>
-</tool>
               #USEFULL LINKS (VEF)
 https://github.com/AndroidQuazar/VanillaExpandedFramework/wiki/Metamorphosis
 
