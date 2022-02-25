@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  
+  <!--
   <!-- Clockwork Leg -->
 
   <HediffDef ParentName="AddedBodyPartBase">
@@ -559,5 +559,5 @@
     </appliedOnFixedBodyParts>
     <addsHediff>ISA_TortureBrainSpike</addsHediff>
   </RecipeDef>
-
+-->
 </Defs>
