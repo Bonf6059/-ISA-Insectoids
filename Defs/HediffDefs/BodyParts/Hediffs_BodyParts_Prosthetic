@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
-  <!--
+  
   <!-- Clockwork Leg -->
 
   <HediffDef ParentName="AddedBodyPartBase">
@@ -63,6 +63,7 @@
     <addsHediff>ISA_ClockworkLeg</addsHediff>
   </RecipeDef>
 
+ <!-- =============================================================================================================================-->
   <!-- Clockwork arm -->
 
   <HediffDef ParentName="AddedBodyPartBase">
@@ -139,6 +140,7 @@
     <addsHediff>ISA_ClockworkArm</addsHediff>
   </RecipeDef>
 
+ <!-- =============================================================================================================================-->
   <!-- Grappling Hand -->
 
   <HediffDef ParentName="AddedBodyPartBase">
@@ -207,7 +209,8 @@
     </appliedOnFixedBodyParts>
     <addsHediff>ISA_Grapplinghand</addsHediff>
   </RecipeDef>
-    
+
+ <!-- =============================================================================================================================-->
    <!-- Magnifying eye -->
 
   <HediffDef ParentName="AddedBodyPartBase">
@@ -269,6 +272,7 @@
     <addsHediff>ISA_MagnifyingEye</addsHediff>
   </RecipeDef>
   
+ <!-- =============================================================================================================================-->
    <!-- Mechanical jaw -->
 
   <HediffDef ParentName="AddedBodyPartBase">
@@ -330,69 +334,8 @@
     </appliedOnFixedBodyParts>
     <addsHediff>ISA_MechanicalJaw</addsHediff>
   </RecipeDef>
-  
-    <!-- Prosthetic Spine -->
     
-<HediffDef ParentName="AddedBodyPartBase">
-    <defName>ISA_SimpleProstheticSpine</defName>
-    <label>prosthetic spine</label>
-    <labelNoun>a prosthetic spine</labelNoun>
-    <description>An installed prosthetic spine.</description>
-    <descriptionHyperlinks><ThingDef>ISA_SimpleProstheticSpine</ThingDef></descriptionHyperlinks>
-    <spawnThingOnRemoved>ISA_SimpleProstheticSpine</spawnThingOnRemoved>
-    <addedPartProps>
-      <solid>true</solid>
-      <partEfficiency>0.90</partEfficiency>
-    </addedPartProps>
-  </HediffDef>
-
-  <ThingDef ParentName="BodyPartProstheticMakeableBase">
-    <defName>ISA_SimpleProstheticSpine</defName>
-    <label>prosthetic spine</label>
-    <description>A spine prosthesis. While it lacks a neural interface, its complex arrangement of internal joints allows it to mimic natural movement quite convincingly. Still, it is inferior to a real spine.</description>
-    <descriptionHyperlinks><RecipeDef>ISA_InstallSimpleProstheticSpine</RecipeDef></descriptionHyperlinks>
-    <costList>
-      <Steel>30</Steel>
-      <ComponentIndustrial>2</ComponentIndustrial>
-    </costList>
-    <statBases>
-      <Mass>4</Mass>
-    </statBases>
-    <techHediffsTags>
-      <li>Simple</li>
-    </techHediffsTags>
-  </ThingDef>
-
-  <RecipeDef ParentName="SurgeryInstallBodyPartProstheticBase">
-    <defName>ISA_InstallSimpleProstheticSpine</defName>
-    <label>install prosthetic spine</label>
-    <description>Install a prosthetic spine.</description>
-    <descriptionHyperlinks>
-      <ThingDef>ISA_SimpleProstheticSpine</ThingDef>
-      <HediffDef>ISA_SimpleProstheticSpine</HediffDef>
-    </descriptionHyperlinks>
-    <jobString>Installing prosthetic spine.</jobString>
-    <ingredients>
-      <li>
-        <filter>
-          <thingDefs>
-            <li>ISA_SimpleProstheticSpine</li>
-          </thingDefs>
-        </filter>
-        <count>1</count>
-      </li>
-    </ingredients>
-    <fixedIngredientFilter>
-      <thingDefs>
-        <li>ISA_SimpleProstheticSpine</li>
-      </thingDefs>
-    </fixedIngredientFilter>
-    <appliedOnFixedBodyParts>
-      <li>Spine</li>
-    </appliedOnFixedBodyParts>
-    <addsHediff>ISA_SimpleProstheticSpine</addsHediff>
-  </RecipeDef>
-    
+ <!-- =============================================================================================================================-->
  <!-- PlasteelClaw -->
 
   <HediffDef ParentName="AddedBodyPartBase">
@@ -500,6 +443,7 @@
     <removesHediff>PlasteelClaw</removesHediff>
   </RecipeDef>
 
+ <!-- =============================================================================================================================-->
     <!-- Brain Spike--> 
 <HediffDef ParentName="AddedBodyPartBase">
     <defName>ISA_TortureBrainSpike</defName>
@@ -559,5 +503,5 @@
     </appliedOnFixedBodyParts>
     <addsHediff>ISA_TortureBrainSpike</addsHediff>
   </RecipeDef>
--->
+
 </Defs>
