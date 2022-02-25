@@ -13,6 +13,7 @@ mod with better insectoids:
 - new corpes decayer, acid immune, infecter bug (links below)
 - Prothesys 
 - story teller?
+- cavare la patch degli insetti e creare nuovi insetti con tutto uguale, tranne def name, e con le abilità (chiamati uguali)
 
 
                 Patch necessarie
