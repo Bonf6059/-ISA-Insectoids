@@ -62,5 +62,230 @@
     </appliedOnFixedBodyParts>
     <addsHediff>ISA_SimpleProstheticSpine</addsHediff>
   </RecipeDef>
+    
+<!--====================================================================================================================================-->
+    
+     <!-- PlasteelClaw -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PlasteelClaw</defName>
+    <label>plasteel claw</label>
+    <labelNoun>a plasteel claw</labelNoun>
+    <description>An installed plasteel claw.</description>
+    <descriptionHyperlinks><ThingDef>PlasteelClaw</ThingDef></descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+     <stages>
+      <li>
+        <statOffsets>
+            <MiningSpeed>1.2</MiningSpeed>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.08</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>claw</label>
+            <capacities>
+              <li>Scratch</li>
+            </capacities>
+            <power>20</power>  <!-- Lower damage means lower AP than other compact weapons, but it's faster with more raw DPS -->
+            <armorPenetration>0.2</armorPenetration>
+            <cooldownTime>1.8</cooldownTime>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>PlasteelClaw</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>PlasteelClaw</defName>
+    <label>plasteel claw</label>
+    <description>A razor-sharp talon which extends from a hidden opening between the fingers. The claw is longer than the palm, but it becomes flexible upon retracting, allowing the user to curl it up and conceal it inside the hand. It can perform rapid slashing attacks. It is hard enough to speed up mining operations.</description>
+    <descriptionHyperlinks><RecipeDef>InstallPlasteelClaw</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <Steel>40</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Prosthetics</researchPrerequisite>
+    </recipeMaker>
+    <violentTechHediff>true</violentTechHediff>
+    <techHediffsTags>
+      <li>AdvancedWeapon</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallPlasteelClaw</defName>
+    <label>install plasteel claw</label>
+    <description>Install a plasteel claw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelClaw</ThingDef>
+      <HediffDef>PlasteelClaw</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing plasteel claw.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasteelClaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasteelClaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PlasteelClaw</addsHediff>
+  </RecipeDef>
   
-  </Defs>
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemovePlasteelClaw</defName>
+    <label>remove plasteel claw</label>
+    <description>Remove plasteel claw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasteelClaw</ThingDef>
+      <HediffDef>PlasteelClaw</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing plasteel claw.</jobString>
+    <removesHediff>PlasteelClaw</removesHediff>
+  </RecipeDef>
+    
+<!--====================================================================================================================================-->
+
+     <!-- PlasmaClaw -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>PlasmaClaw</defName>
+    <label>plasma claw</label>
+    <labelNoun>a plasma claw</labelNoun>
+    <description>An installed plasma claw.</description>
+    <descriptionHyperlinks><ThingDef>PlasmaClaw</ThingDef></descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+    </addedPartProps>
+     <stages>
+      <li>
+        <statOffsets>
+            <MiningSpeed>1.30</MiningSpeed>
+        </statOffsets>
+        <capMods>
+          <li>
+            <capacity>Moving</capacity>
+            <offset>-0.08</offset>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+    <comps>
+      <li Class="HediffCompProperties_VerbGiver">
+        <tools>
+          <li>
+            <label>claw</label>
+            <capacities>
+              <li>Scratch</li>
+            </capacities>
+            <power>20</power>  <!-- Lower damage means lower AP than other compact weapons, but it's faster with more raw DPS -->
+            <armorPenetration>0.2</armorPenetration>
+            <cooldownTime>1.8</cooldownTime>
+            <extraMeleeDamages>
+              <li>
+                <def>Burn</def>
+                <amount>10</amount>
+                <chance>0.25</chance>
+              </li>
+            </extraMeleeDamages>
+            <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
+            <soundMeleeHit>MeleeHit_BionicSlash</soundMeleeHit>
+            <soundMeleeMiss>MeleeMiss_BionicSlash</soundMeleeMiss>
+          </li>
+        </tools>
+      </li>
+    </comps>
+    <spawnThingOnRemoved>PlasmaClaw</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>PlasmaClaw</defName>
+    <label>plasma claw</label>
+    <description>A razor-sharp talon which extends from a hidden opening between the fingers. The claw is longer than the palm, but it becomes flexible upon retracting, allowing the user to curl it up and conceal it inside the hand. It can perform rapid slashing attacks. It is hard enough to speed up mining operations.</description>
+    <descriptionHyperlinks><RecipeDef>InstallPlasmaClaw</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>15</Plasteel>
+      <Steel>40</Steel>
+      <ComponentIndustrial>5</ComponentIndustrial>
+      <Chemfuel>25</Chemfuel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Bionics</researchPrerequisite>
+    </recipeMaker>
+    <violentTechHediff>true</violentTechHediff>
+    <techHediffsTags>
+      <li>AdvancedWeapon</li>
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallPlasmaClaw</defName>
+    <label>install plasma claw</label>
+    <description>Install a plasma claw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasmaClaw</ThingDef>
+      <HediffDef>PlasmaClaw</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing plasma claw.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>PlasmaClaw</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>PlasmaClaw</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Hand</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>PlasmaClaw</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemovePlasmaClaw</defName>
+    <label>remove plasma claw</label>
+    <description>Remove plasma claw.</description>
+    <descriptionHyperlinks>
+      <ThingDef>PlasmaClaw</ThingDef>
+      <HediffDef>PlasmaClaw</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing plasma claw.</jobString>
+    <removesHediff>PlasmaClaw</removesHediff>
+  </RecipeDef>
+</Defs>
