@@ -4,42 +4,49 @@
   <!-- Add new abilities to insectoids -->
   
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName = "Megascarab" or defName = "Spelopede" or defName = "Megaspider"]/comps</xpath>
+    <xpath>/Defs/ThingDef[defName = "Megascarab" or defName = "Spelopede" or defName = "Megaspider"]</xpath>
     <value>
         <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
+	     <comps>
 		<hediffsToRemove>
 			<li>Animal_Plague</li>
 			<li>Animal_Flu</li>
 			<li>AB_AnimalSporesAllergy</li>
 		</hediffsToRemove>
 		<tickInterval>2000</tickInterval>
+	     </comps>
 	</li>
     </value>
   </Operation>
 	
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName = "Megascarab"]/comps</xpath>
+    <xpath>/Defs/ThingDef[defName = "Megascarab"]</xpath>
     <value>
+      <comps>
 	<li Class="CompProperties_Milkable">
           <milkDef>InsectJelly</milkDef>
           <milkIntervalDays>1</milkIntervalDays>
      	  <milkAmount>6</milkAmount>
     	  <milkFemaleOnly>false</milkFemaleOnly>
     	</li>
+       </comps>
     </value>
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName = "Spelopede"]/comps</xpath>
+    <xpath>/Defs/ThingDef[defName = "Spelopede"]</xpath>
     <value>
+       <comps>
 	<li Class="AnimalBehaviours.CompProperties_AcidImmunity">		
 	</li>
+       </comps>
     </value>
   </Operation>
 
   <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/ThingDef[defName = "Megaspider"]/comps</xpath>
+    <xpath>/Defs/ThingDef[defName = "Megaspider"]</xpath>
     <value>
+      <comps>
 	<li Class="AnimalBehaviours.CompProperties_DigPeriodically">
 		<customThingToDig>			
 			<li>ChunkSandstone</li>
@@ -107,6 +114,7 @@
 		</customAmountToDig>
 		<ticksToDig>60000</ticksToDig>
 	</li>
+      </comps>
     </value>
   </Operation>
 	
