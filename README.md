@@ -8,11 +8,11 @@ mod with better insectoids:
 - megascarab overhaul (insect jelly production) ✔
 - spelopede overhaul (spits and resist acid [use vanilla venom]) ❌✔
 - megaspider overhaul (dig once a day)✔
-- no new textures ?
 - new fire fly/glowing megascarab butt?
 - new corpes decayer, acid immune, infecter bug (links below)
-- Prothesys 
+- Prothesys ✔❌
 - story teller?
+- add new insectoids to hives and infestations ❌
 
               #USEFULL LINKS (VEF)
 https://github.com/AndroidQuazar/VanillaExpandedFramework/wiki/Metamorphosis
