@@ -430,7 +430,7 @@
 			      <li>10</li>
 			      <li>10</li>		
 		    </customAmountToDig>
-		    <ticksToDig>60000</ticksToDig>
+		    <ticksToDig>15000</ticksToDig>
 	    </li>
     </comps>
   </ThingDef>
