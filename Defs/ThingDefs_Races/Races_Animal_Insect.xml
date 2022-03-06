@@ -14,6 +14,10 @@
       <meatMarketValue>0.5</meatMarketValue>
       <foodType>OmnivoreAnimal, AnimalProduct</foodType>
       <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
+      <wildBiomes>
+ 	      <Desert>0.8</Desert>
+	      <Extremedesert>0.3</Extremdesert>
+      </wildBiomes>
     </race>
     <ingredient>
       <mergeCompatibilityTags>
