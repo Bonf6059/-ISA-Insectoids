@@ -12,7 +12,7 @@
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
     <value>
-    <li>ISA_Caravan_Entomologists</li>
+    <li>ISA_Caravan_Entomologists_Trader</li>
     </value>
   </Operation>
   
