@@ -110,7 +110,7 @@
     <spawnThingOnRemoved>PlasteelClaw</spawnThingOnRemoved>
   </HediffDef>
 
-  <ThingDef ParentName="BodyPartProstheticBase">
+  <ThingDef ParentName="BodyPartProstheticMakeableBas">
     <defName>PlasteelClaw</defName>
     <label>plasteel claw</label>
     <description>A razor-sharp talon which extends from a hidden opening between the fingers. The claw is longer than the palm, but it becomes flexible upon retracting, allowing the user to curl it up and conceal it inside the hand. It can perform rapid slashing attacks. It is hard enough to speed up mining operations.</description>
