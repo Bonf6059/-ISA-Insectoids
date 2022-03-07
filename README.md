@@ -3,15 +3,15 @@
 mod with better insectoids:
 - Buildable hives ✔
 - Insectoids products ✔
-- every bug has Disease Immunity ✔
+- every bug has Disease Immunity and stats boost ✔
 - new traders ✔
 - megascarab overhaul (insect jelly production) ✔
-- spelopede overhaul (spits and resist acid [use vanilla venom]) ❌✔
+- spelopede overhaul (acid attack and resist acid) ✔
 - megaspider overhaul (dig once a day)✔
 - Prothesys ✔❌
 - heating pad (heaters as floor tiles)?
 - new fire fly/glowing megascarab butt?
-- new corpes decayer, acid immune, infecter bug (links below)
+- new corpes decayer, acid immune, infecter bug (links below)?
 
               #USEFULL LINKS (VEF)
 https://github.com/AndroidQuazar/VanillaExpandedFramework/wiki/Metamorphosis
