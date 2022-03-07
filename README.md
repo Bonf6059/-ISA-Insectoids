@@ -9,6 +9,7 @@ mod with better insectoids:
 - spelopede overhaul ✔
 - megaspider overhaul ✔
 - Prothesys ✔
+- new traits (cannibals but they love insect meat) ❌
 - heating pad (heaters as floor tiles)?
 - new fire fly/glowing megascarab butt?
 - new corpes decayer, acid immune, infecter bug (links below)?
