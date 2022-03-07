@@ -12,7 +12,7 @@ mod with better insectoids:
 - new corpes decayer, acid immune, infecter bug (links below)
 - Prothesys ✔❌
 - story teller?
-- add new insectoids to hives and infestations ❌
+- heating pad (heaters as floor tiles)?❌
 
               #USEFULL LINKS (VEF)
 https://github.com/AndroidQuazar/VanillaExpandedFramework/wiki/Metamorphosis
