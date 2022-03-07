@@ -5,10 +5,10 @@ mod with better insectoids:
 - Insectoids products ✔
 - every bug has Disease Immunity and stats boost ✔
 - new traders ✔
-- megascarab overhaul (insect jelly production) ✔
-- spelopede overhaul (acid attack and resist acid) ✔
-- megaspider overhaul (dig once a day)✔
-- Prothesys ✔❌
+- megascarab overhaul ✔
+- spelopede overhaul ✔
+- megaspider overhaul ✔
+- Prothesys ✔
 - heating pad (heaters as floor tiles)?
 - new fire fly/glowing megascarab butt?
 - new corpes decayer, acid immune, infecter bug (links below)?
