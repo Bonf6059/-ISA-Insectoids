@@ -97,7 +97,7 @@
             <capacities>
               <li>Scratch</li>
             </capacities>
-            <power>20</power>  <!-- Lower damage means lower AP than other compact weapons, but it's faster with more raw DPS -->
+            <power>20</power>  
             <armorPenetration>0.2</armorPenetration>
             <cooldownTime>1.8</cooldownTime>
             <alwaysTreatAsWeapon>true</alwaysTreatAsWeapon>
@@ -206,7 +206,7 @@
             <capacities>
               <li>Scratch</li>
             </capacities>
-            <power>20</power>  <!-- Lower damage means lower AP than other compact weapons, but it's faster with more raw DPS -->
+            <power>20</power>
             <armorPenetration>0.2</armorPenetration>
             <cooldownTime>1.8</cooldownTime>
             <extraMeleeDamages>
