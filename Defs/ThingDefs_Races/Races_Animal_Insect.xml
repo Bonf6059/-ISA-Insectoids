@@ -190,6 +190,13 @@
         </capacities>
         <power>9</power>
         <cooldownTime>2</cooldownTime>
+        <extraMeleeDamages>
+          <li>
+            <def>ScratchToxic</def>
+            <amount>10</amount>
+            <chance>0.25</chance>
+          </li>
+        </extraMeleeDamages>
         <linkedBodyPartsGroup>HeadClaw</linkedBodyPartsGroup>
       </li>
       <li>
