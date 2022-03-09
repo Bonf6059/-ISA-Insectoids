@@ -288,4 +288,82 @@
     <jobString>Removing plasma claw.</jobString>
     <removesHediff>PlasmaClaw</removesHediff>
   </RecipeDef>
+    
+<!--====================================================================================================================================-->
+
+     <!-- ExtendedWindpipe -->
+
+  <HediffDef ParentName="AddedBodyPartBase">
+    <defName>ExtendedWindpipe</defName>
+    <label>extended windpipe</label>
+    <labelNoun>an extended windpipe</labelNoun>
+    <description>An extended windpipe.</description>
+    <descriptionHyperlinks><ThingDef>ExtendedWindpipe</ThingDef></descriptionHyperlinks>
+    <addedPartProps>
+      <solid>true</solid>
+      <partEfficiency>1.15</partEfficiency>
+    </addedPartProps>
+    <spawnThingOnRemoved>ExtendedWindpipe</spawnThingOnRemoved>
+  </HediffDef>
+
+  <ThingDef ParentName="BodyPartBionicBase">
+    <defName>ExtendedWindpipe</defName>
+    <label>extended windpipe</label>
+    <description>An augmentation inspired by the observation of insectoids that connects the lungs with the outside world thanks to an additional windpipe allowing the user a greater oxygen intake.</description>
+    <descriptionHyperlinks><RecipeDef>InstallExtendedWindpipe</RecipeDef></descriptionHyperlinks>
+    <thingSetMakerTags><li>RewardStandardLowFreq</li></thingSetMakerTags>
+    <costList>
+      <Plasteel>10</Plasteel>
+      <Steel>30</Steel>
+    </costList>
+    <recipeMaker>
+      <researchPrerequisite>Bionics</researchPrerequisite>
+    </recipeMaker>
+    <violentTechHediff>true</violentTechHediff>
+    <techHediffsTags>
+
+    </techHediffsTags>
+  </ThingDef>
+
+  <RecipeDef ParentName="SurgeryInstallImplantBase">
+    <defName>InstallExtendedWindpipe</defName>
+    <label>install extended windpipe</label>
+    <description>Install an extended windpipe.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ExtendedWindpipe</ThingDef>
+      <HediffDef>ExtendedWindpipe</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Installing extended windpipe.</jobString>
+    <ingredients>
+      <li>
+        <filter>
+          <thingDefs>
+            <li>ExtendedWindpipe</li>
+          </thingDefs>
+        </filter>
+        <count>1</count>
+      </li>
+    </ingredients>
+    <fixedIngredientFilter>
+      <thingDefs>
+        <li>ExtendedWindpipe</li>
+      </thingDefs>
+    </fixedIngredientFilter>
+    <appliedOnFixedBodyParts>
+      <li>Lung</li>
+    </appliedOnFixedBodyParts>
+    <addsHediff>ExtendedWindpipe</addsHediff>
+  </RecipeDef>
+  
+  <RecipeDef ParentName="SurgeryRemoveImplantBase">
+    <defName>RemoveExtendedWindpipe</defName>
+    <label>remove extended windpipe</label>
+    <description>Remove extended windpipe.</description>
+    <descriptionHyperlinks>
+      <ThingDef>ExtendedWindpipe</ThingDef>
+      <HediffDef>ExtendedWindpipe</HediffDef>
+    </descriptionHyperlinks>
+    <jobString>Removing extended windpipe.</jobString>
+    <removesHediff>ExtendedWindpipe</removesHediff>
+  </RecipeDef>
 </Defs>
