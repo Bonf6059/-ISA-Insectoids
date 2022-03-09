@@ -10,6 +10,7 @@ mod with better insectoids:
 - megaspider overhaul ✔
 - Prothesys ✔
 - choose what the megascarab produce (white herbal medine/spider silk bandages or insect jelly)
+- verify if leatherm amount = 0 create errors with VFEI patches
 - heating pad (heaters as floor tiles)?❌
 - new corpes decayer, acid immune, infecter bug (links below)?❌
 
