@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Patch>
+
+<!-- Adds VFEI genomes to caravan -->
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ISA_Evoscarab"]</xpath>
+    <value>
+      <butcherProducts>
+        <VFEI_Chitin>3</VFEI_Chitin>
+      </butcherProducts>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ISA_Evopede"]</xpath>
+    <value>
+      <butcherProducts>
+        <VFEI_Chitin>7</VFEI_Chitin>
+      </butcherProducts>
+    </value>
+  </Operation>
+  
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ISA_Evospider"]</xpath>
+    <value>
+      <butcherProducts>
+        <VFEI_Chitin>12</VFEI_Chitin>
+      </butcherProducts>
+    </value>
+  </Operation>
