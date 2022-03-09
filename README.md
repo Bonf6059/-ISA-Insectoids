@@ -9,10 +9,9 @@ mod with better insectoids:
 - spelopede overhaul ✔
 - megaspider overhaul ✔
 - Prothesys ✔
-- new traits (cannibals but they love insect meat) ❌
-- heating pad (heaters as floor tiles)?
-- new fire fly/glowing megascarab butt?
-- new corpes decayer, acid immune, infecter bug (links below)?
+- choose what the megascarab produce (white herbal medine/spider silk bandages or insect jelly)
+- heating pad (heaters as floor tiles)?❌
+- new corpes decayer, acid immune, infecter bug (links below)?❌
 
               #USEFULL LINKS (VEF)
 https://github.com/AndroidQuazar/VanillaExpandedFramework/wiki/Metamorphosis
