@@ -1,7 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<!-- Adds VFEI genomes to caravan -->
+<!-- Adds VFEI chitin to ISA-insectoids -->
   
   <Operation Class="PatchOperationAdd">
     <xpath>Defs/ThingDef[defName="ISA_Evoscarab"]</xpath>
@@ -29,3 +29,16 @@
       </butcherProducts>
     </value>
   </Operation>
+
+<!-- Adds VFEI products to ISA-insectoids -->
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/ThingDef[defName="ISA_Evopede"]/comps</xpath>
+    <value>
+      <li Class="CompProperties_Shearable">
+        <woolDef>VFEI_Chitin</woolDef>
+        <shearIntervalDays>5</shearIntervalDays>
+        <woolAmount>3</woolAmount>
+      </li>
+    </value>
+  </Operation>
+</Patch>
