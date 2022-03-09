@@ -38,6 +38,14 @@
         <thingDef>VFEI_RoyalGenome</thingDef>
         <countRange>0~2</countRange>
       </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>VFEI_BioengineeringIncubator</thingDef>
+        <countRange>0~1</countRange>
+      </li>
+      <li Class="StockGenerator_SingleDef">
+        <thingDef>VFEI_SonicInfestationRepeller</thingDef>
+        <countRange>0~1</countRange>
+      </li>
     </value>
   </Operation>
   
