@@ -1,6 +1,6 @@
 # -ISA-Insectoids_Addons
 
-mod with better insectoids:
+mod with better insectoids and more:
 - Buildable hives ✔
 - Insectoids products ✔
 - every bug has Disease Immunity and stats boost ✔
@@ -10,7 +10,7 @@ mod with better insectoids:
 - megaspider overhaul ✔
 - Prothesys ✔
 - choose what the megascarab produce (white herbal medine/spider silk bandages or insect jelly)
-- verify if leatherm amount = 0 create errors with VFEI patches
+- verify if leather amount = 0 create errors with VFEI patches
 - heating pad (heaters as floor tiles)?❌
 - new corpes decayer, acid immune, infecter bug (links below)?❌
 
