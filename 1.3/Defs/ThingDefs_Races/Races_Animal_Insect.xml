@@ -27,13 +27,13 @@
         <wakeUpOnDamage>true</wakeUpOnDamage>
       </li>
       <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
-	        <hediffsToRemove>
-			      <li>Animal_Plague</li>
-			      <li>Animal_Flu</li>
-			      <li>AB_AnimalSporesAllergy</li>
-		      </hediffsToRemove>
-		    <tickInterval>2000</tickInterval>
-	    </li>
+	<hediffsToRemove>
+	  <li>Animal_Plague</li>
+	  <li>Animal_Flu</li>
+	  <li>AB_AnimalSporesAllergy</li>
+	</hediffsToRemove>
+	<tickInterval>2000</tickInterval>
+      </li>
     </comps>
   </ThingDef>
 
@@ -42,14 +42,14 @@
   <ThingDef ParentName="ISAInsect">
     <defName>ISA_Evoscarab</defName>
     <label>evoscarab</label>
-    <description>A large, genetically-engineered megascarab. Once the worker caste of an artificial ecosystem of insectoids designed to fight mechanoid invasions. It looks like a normal megascarab but some glittertech entusiast has genetically modified it before beening discovered and forced to shut down the operation yet some of this insectoids escaped and now roam the rim.</description>
+    <description>A large, genetically-engineered megascarab. Once the worker caste of an artificial ecosystem of insectoids designed to fight mechanoid invasions. It looks like a normal megascarab but some glittertech entusiast has genetically modified it before beening discovered and forced to shut down the operation yet some of these insectoids escaped and now roam the rim. It emits light as a byproduct of the chemical reaction that produce insect jelly</description>
     <statBases>
       <MoveSpeed>3.75</MoveSpeed>
       <ArmorRating_Blunt>0.18</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.72</ArmorRating_Sharp>
       <ComfyTemperatureMin>0</ComfyTemperatureMin>
       <MarketValue>150</MarketValue>
-      <LeatherAmount>0</LeatherAmount>
+      <LeatherAmount>0</LeatherAmount>		<!-- Controllare se è compatibile con la patch per fargli droppare chitin una volta macellato-->
     </statBases>
     <uiIconScale>2</uiIconScale>
     <tools>
@@ -109,12 +109,16 @@
       <li>AnimalInsect</li>
     </tradeTags>
     <comps>
-	    <li Class="CompProperties_Milkable">
+      <li Class="CompProperties_Milkable">
         <milkDef>InsectJelly</milkDef>
         <milkIntervalDays>1</milkIntervalDays>
-     	  <milkAmount>6</milkAmount>
-    	  <milkFemaleOnly>false</milkFemaleOnly>
-    	</li>
+     	<milkAmount>6</milkAmount>
+    	<milkFemaleOnly>false</milkFemaleOnly>
+      </li>
+      <li Class="CompProperties_Glower">
+        <glowRadius>3</glowRadius>
+        <glowColor>(370,370,370,0)</glowColor>
+      </li>
     </comps>
   </ThingDef>
   
@@ -172,12 +176,12 @@
   <ThingDef ParentName="ISAInsect">
     <defName>ISA_Evopede</defName>
     <label>evopede</label>
-    <description>A medium-sized bioengineered insectoid the size of a sheep. The spelopede is the middle caste of a hive, taking care of most work tasks as well as fighting with its digging claws. It's dangerous in combat, but slow on open ground.  It looks like a normal spelopede but some glittertech entusiast has genetically modified it before beening discovered and forced to shut down the operation yet some of this insectoids escaped and now roam the rim</description>
+    <description>A medium-sized bioengineered insectoid the size of a sheep. The spelopede is the middle caste of a hive, taking care of most work tasks as well as fighting with its digging claws. It's dangerous in combat, but slow on open ground.  It looks like a normal spelopede but some glittertech entusiast has genetically modified it before beening discovered and forced to shut down the operation yet some of this insectoids escaped and now roam the rim. The experiments augmented their ability to fight making them stronger</description>
     <statBases>
       <MoveSpeed>3.65</MoveSpeed>
       <ComfyTemperatureMin>-25</ComfyTemperatureMin>
       <MarketValue>300</MarketValue>
-      <LeatherAmount>0</LeatherAmount>
+      <LeatherAmount>0</LeatherAmount>			<!-- Controllare se è compatibile con la patch per fargli droppare chitin una volta macellato-->
       <ArmorRating_Blunt>0.22</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.22</ArmorRating_Sharp>
     </statBases>
@@ -310,7 +314,7 @@
       <MoveSpeed>3.60</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
       <MarketValue>700</MarketValue>
-      <LeatherAmount>0</LeatherAmount>
+      <LeatherAmount>0</LeatherAmount>			<!-- Controllare se è compatibile con la patch per fargli droppare chitin una volta macellato-->
       <ArmorRating_Blunt>0.20</ArmorRating_Blunt>
       <ArmorRating_Sharp>0.30</ArmorRating_Sharp>
     </statBases>
@@ -404,7 +408,7 @@
 	      		<li>Jade</li>
 		      	<li>Gold</li>
 		      	<li>Plasteel</li>
-			      <li>Silver</li>			
+			<li>Silver</li>			
 		    </customThingToDig>
 		    <customAmountToDig>				
 		      	<li>1</li>
