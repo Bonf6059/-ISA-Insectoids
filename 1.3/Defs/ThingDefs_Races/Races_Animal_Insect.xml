@@ -377,6 +377,11 @@
       <li>AnimalInsect</li>
     </tradeTags>
     <comps>
+      <li Class="CompProperties_Shearable">
+        <woolDef>ISA_SilkyBandages</woolDef>
+        <shearIntervalDays>3</shearIntervalDays>
+        <woolAmount>5</woolAmount>
+      </li>
 	    <li Class="AnimalBehaviours.CompProperties_DigPeriodically">
 		    <customThingToDig>			
 		      	<li>ChunkSandstone</li>
