@@ -115,10 +115,6 @@
      	<milkAmount>6</milkAmount>
     	<milkFemaleOnly>false</milkFemaleOnly>
       </li>
-      <li Class="CompProperties_Glower">
-        <glowRadius>3</glowRadius>
-        <glowColor>(370,370,370,0)</glowColor>
-      </li>
     </comps>
   </ThingDef>
   
