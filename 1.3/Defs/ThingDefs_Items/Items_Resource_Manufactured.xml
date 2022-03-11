@@ -5,7 +5,7 @@
     <label>silky bandages</label>
     <description>A pack of bandages created thanks to a silky substance. It is slightly better than herbal medicine but it is less potent than industrial pharmaceuticals, but much better than nothing.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Medicine/MedicineHerbal</texPath>
+      <texPath>Things/Item/Resource/Medicine/SilkyBandages</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>0.85</drawSize>
     </graphicData>
