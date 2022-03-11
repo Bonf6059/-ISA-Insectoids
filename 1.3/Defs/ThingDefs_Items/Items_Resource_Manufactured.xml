@@ -1,11 +1,12 @@
-
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
 
   <ThingDef ParentName="MedicineBase">
     <defName>ISA_SilkyBandages</defName>
     <label>silky bandages</label>
     <description>A pack of bandages created thanks to a silky substance. It is slightly better than herbal medicine but it is less potent than industrial pharmaceuticals, but much better than nothing.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Medicine/SilkyBandages</texPath>
+      <texPath>Things/Item/Resource/Medicine/HerbalMedicine</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>0.85</drawSize>
     </graphicData>
@@ -27,3 +28,4 @@
     </comps>
     <allowedArchonexusCount>20</allowedArchonexusCount>
   </ThingDef>
+</Defs>
