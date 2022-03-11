@@ -37,7 +37,6 @@
         <categoryDef>FoodRaw</categoryDef>
         <excludedCategories>
           <li>EggsFertilized</li>
-          <li>InsectJelly</li>
         </excludedCategories>
         <thingDefCountRange>3~3</thingDefCountRange>
         <totalPriceRange>150~800</totalPriceRange>
