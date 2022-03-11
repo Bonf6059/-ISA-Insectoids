@@ -1,14 +1,6 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Patch>
 
-<!-- Add new caravan -->      <!-- Thank you Criz#2714 for the help with this patch -->
-  <Operation Class="PatchOperationAdd">
-    <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
-    <value>
-    <li>ISA_Caravan_EssentialsSupplier</li>
-    </value>
-  </Operation>
-  
   <Operation Class="PatchOperationAdd">
     <xpath>/Defs/FactionDef[@Name="OutlanderFactionBase"]/caravanTraderKinds</xpath>
     <value>
@@ -16,4 +8,4 @@
     </value>
   </Operation>
   
-  </Patch>
+</Patch>
