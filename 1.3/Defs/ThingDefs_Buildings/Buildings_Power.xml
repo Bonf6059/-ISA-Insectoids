@@ -3,13 +3,13 @@
 
 <defName>ISA_MiniSolarGenerator</defName>
     <label>mini solar generator</label>
-    <description>Produces electricity from sunlight. Does not work in the dark or under artificial light.</description>
+    <description>Produces electricity from sunlight. Does not work in the dark or under artificial light. Due to it's small size it can be picked up and moved</description>
     <thingClass>Building</thingClass>
     <drawerType>MapMeshAndRealTime</drawerType>
     <graphicData>
       <texPath>Things/Building/Power/SolarCollector</texPath>
       <graphicClass>Graphic_Single</graphicClass>
-      <drawSize>(1,1)</drawSize>
+      <drawSize>(2,2)</drawSize>
       <shadowData>
         <volume>(3.5,0.75,3.4)</volume>
         <offset>(0,0,0)</offset>
@@ -26,19 +26,19 @@
     <fillPercent>0.5</fillPercent>
     <canOverlapZones>false</canOverlapZones>
     <statBases>
-      <MaxHitPoints>100</MaxHitPoints>
-      <WorkToBuild>750</WorkToBuild>
+      <MaxHitPoints>200</MaxHitPoints>
+      <WorkToBuild>1250</WorkToBuild>
       <Flammability>0.7</Flammability>
     </statBases>
     <tickerType>Normal</tickerType>
     <minifiedDef>MinifiedThing</minifiedDef>
-    <size>(1,1)</size>
+    <size>(2,2)</size>
     <building>
       <destroySound>BuildingDestroyed_Metal_Big</destroySound>
     </building>
     <costList>
-      <Steel>30</Steel>
-      <ComponentIndustrial>1</ComponentIndustrial>
+      <Steel>50</Steel>
+      <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
     <comps>
       <li Class="CompProperties_Power">
@@ -55,7 +55,7 @@
     <researchPrerequisites>
       <li>SolarPanels</li>
     </researchPrerequisites>
-    <constructionSkillPrerequisite>4</constructionSkillPrerequisite>
+    <constructionSkillPrerequisite>5</constructionSkillPrerequisite>
   </ThingDef>
 
 </Defs>
