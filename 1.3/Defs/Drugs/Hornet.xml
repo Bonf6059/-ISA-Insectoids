@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <ThingDef ParentName="MakeableDrugBase">
+    <defName>ISA_Hornet</defName>
+    <label>hornet</label>
+    <description>A flaky white preparation of psychite that can be smoked to induce a short but powerful euphoric state. While it is cheap to produce and extremely pleasurable to use, it is exceptionally addictive. Hornet is known for destroying lives, communities, and entire societies.</description>
+    <descriptionHyperlinks>
+      <HediffDef>HornetHigh</HediffDef>
+      <HediffDef>PsychiteTolerance</HediffDef>
+      <HediffDef>PsychiteAddiction</HediffDef>
+      <HediffDef>ChemicalDamageSevere</HediffDef>
+    </descriptionHyperlinks>
+    <graphicData>
+      <texPath>Things/Item/Drug/Yayo</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <color>(153,0,0)</color>
+      <drawSize>0.75</drawSize>
+    </graphicData>
+    <rotatable>false</rotatable>
+    <statBases>
+      <WorkToMake>300</WorkToMake>
+      <MarketValue>20</MarketValue>
+      <Mass>0.05</Mass>
+    </statBases>
+    <techLevel>Industrial</techLevel>
+    <minRewardCount>10</minRewardCount>
+    <ingestible>
+      <foodType>Processed</foodType>
+      <joyKind>Chemical</joyKind>
+      <joy>0.70</joy>
+      <baseIngestTicks>350</baseIngestTicks>
+      <nurseable>true</nurseable>
+      <drugCategory>Hard</drugCategory>
+      <ingestSound>Ingest_Smoke</ingestSound>
+      <ingestEffect>Smoke_Flake</ingestEffect>
+      <ingestEffectEat>EatVegetarian</ingestEffectEat>
+      <ingestHoldOffsetStanding>
+        <northDefault>
+          <offset>(0.23,0,0.065)</offset>
+        </northDefault>
+      </ingestHoldOffsetStanding>
+      <ingestHoldUsesTable>false</ingestHoldUsesTable>
+      <ingestCommandString>Smoke {0}</ingestCommandString>
+      <ingestReportString>Smoking {0}.</ingestReportString>
+      <useEatingSpeedStat>false</useEatingSpeedStat>
+      <outcomeDoers>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>HornetHigh</hediffDef>
+          <severity>0.75</severity>
+          <toleranceChemical>Psychite</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_OffsetNeed">
+          <need>Rest</need>
+          <offset>0.2</offset>
+          <toleranceChemical>Psychite</toleranceChemical>
+        </li>
+        <li Class="IngestionOutcomeDoer_GiveHediff">
+          <hediffDef>PsychiteTolerance</hediffDef>
+          <severity>0.04</severity>
+          <divideByBodySize>true</divideByBodySize>
+        </li>
+      </outcomeDoers>
+    </ingestible>
+    <recipeMaker>
+      <researchPrerequisite>PsychiteRefining</researchPrerequisite>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <soundWorking>Recipe_Drug</soundWorking>
+    </recipeMaker>
+    <costList>
+      <PsychoidLeaves>6</PsychoidLeaves>
+      <Neutroamine>2</Neutroamine>
+    </costList>
+    <comps>
+      <li Class="CompProperties_Drug">
+        <chemical>Psychite</chemical>
+        <addictiveness>0.07</addictiveness>
+        <existingAddictionSeverityOffset>0.30</existingAddictionSeverityOffset>
+        <needLevelOffset>0.9</needLevelOffset>
+        <listOrder>120</listOrder>
+        <overdoseSeverityOffset>0.1~0.3</overdoseSeverityOffset>
+        <largeOverdoseChance>0.015</largeOverdoseChance>
+      </li>
+    </comps>
+  </ThingDef>
+  
+  <HediffDef>
+    <defName>HornetHigh</defName>
+    <label>high on hornet</label>
+    <labelNoun>a hornet high</labelNoun>
+    <description>Active hornet in the bloodstream. Generates a euphoric, debilitating high.</description>
+    <hediffClass>Hediff_High</hediffClass>
+    <defaultLabelColor>(1,0,0.5)</defaultLabelColor>
+    <scenarioCanAdd>true</scenarioCanAdd>
+    <maxSeverity>1.0</maxSeverity>
+    <isBad>false</isBad>
+    <comps>
+      <li Class="HediffCompProperties_SeverityPerDay">
+        <severityPerDay>-3.0</severityPerDay>
+        <showHoursToRecover>true</showHoursToRecover>
+      </li>
+    </comps>
+      <stages>
+        <li>
+          <painFactor>0.4</painFactor>
+          <restFallFactor>0.33</restFallFactor>
+          <capMods>
+            <li>
+              <capacity>Consciousness</capacity>
+              <offset>0.10</offset>
+            </li>
+            <li>
+              <capacity>BloodFiltration</capacity>
+              <offset>0.20</offset>
+            </li>
+            <li>
+              <capacity>Moving</capacity>
+              <offset>0.1</offset>
+            </li>
+          </capMods>
+          <statOffsets>
+            <WorkSpeedGlobal>0.3</WorkSpeedGlobal>
+          </statOffsets>
+        </li>        
+      </stages>
+  </HediffDef>
+  
+  <ThoughtDef>
+    <defName>HornetHigh</defName>
+    <workerClass>ThoughtWorker_Hediff</workerClass>
+    <hediff>HornetHigh</hediff>
+    <validWhileDespawned>true</validWhileDespawned>
+    <stages>
+      <li>
+        <label>high on hornet</label>
+        <description>So good, so good.</description>
+        <baseMoodEffect>35</baseMoodEffect>
+      </li>
+    </stages>
+  </ThoughtDef>
+
+</Defs>
