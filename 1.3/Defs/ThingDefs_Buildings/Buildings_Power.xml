@@ -34,12 +34,15 @@
     <minifiedDef>MinifiedThing</minifiedDef>
     <size>(2,2)</size>
     <building>
-      <destroySound>BuildingDestroyed_Metal_Big</destroySound>
+      <destroySound>BuildingDestroyed_Metal_Small</destroySound>
     </building>
     <costList>
       <Steel>50</Steel>
       <ComponentIndustrial>2</ComponentIndustrial>
     </costList>
+    <thingCategories>
+      <li>BuildingsPower</li>
+    </thingCategories>
     <comps>
       <li Class="CompProperties_Power">
         <compClass>CompPowerPlantSolar</compClass>
