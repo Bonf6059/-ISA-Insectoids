@@ -20,7 +20,7 @@
     <rotatable>false</rotatable>
     <statBases>
       <WorkToMake>300</WorkToMake>
-      <MarketValue>20</MarketValue>
+      <MarketValue>50</MarketValue>
       <Mass>0.05</Mass>
     </statBases>
     <techLevel>Industrial</techLevel>
