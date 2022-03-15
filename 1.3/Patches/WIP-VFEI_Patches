@@ -5,20 +5,38 @@
       <li>Vanilla Factions Expanded - Insectoids</li>
     </mods>	
 	<match Class="PatchOperationSequence">
-      <operations>	  	
-		<li Class="PatchOperationReplace">
-         <xpath>/Defs/RecipeDef[defName = "VMEu_MakeChemfuelFromDarkOil"]/products/Chemfuel</xpath>
+      <operations>
+        
+        
+	<li Class="PatchOperationAdd">
+         <xpath>/Defs/ThingDef[defName = "ISA_Evoscarab"]</xpath>
          <value>
-            
+           <butcherProducts>
+             <VFEI_Chitin>1</VFEI_Chitin>
+           </butcherProducts>
          </value>		 
         </li>
-        <li Class="PatchOperationReplace">
-            <xpath>/Defs/ThingDef[defName = "Neutroamine"]/statBases/MarketValue</xpath>
-            <value>
-                
-            </value>
+        
+        
+        <li Class="PatchOperationAdd">
+         <xpath>/Defs/ThingDef[defName = "ISA_Evopede"]</xpath>
+         <value>
+           <butcherProducts>
+             <VFEI_Chitin>3</VFEI_Chitin>
+           </butcherProducts>
+         </value>		 
         </li>
-	  </operations>	  
+        
+        
+	<li Class="PatchOperationAdd">
+         <xpath>/Defs/ThingDef[defName = "ISA_Evospider"]</xpath>
+         <value>
+           <butcherProducts>
+             <VFEI_Chitin>5</VFEI_Chitin>
+           </butcherProducts>
+         </value>		 
+        </li>
+      </operations>	  
     </match>		  
   </Operation>
 </Patch>
