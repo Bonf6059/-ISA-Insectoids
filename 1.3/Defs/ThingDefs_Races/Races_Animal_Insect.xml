@@ -1,45 +1,7 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-  <ThingDef Abstract="True" ParentName="AnimalThingBase" Name="ISAInsect">
-    <devNote>insect</devNote>
-    <statBases>
-      <ToxicSensitivity>0</ToxicSensitivity>
-      <ComfyTemperatureMax>60</ComfyTemperatureMax>
-    </statBases>
-    <race>
-      <fleshType>Insectoid</fleshType>
-      <bloodDef>Filth_BloodInsect</bloodDef>
-      <meatColor>(160,168,139)</meatColor>
-      <meatMarketValue>0.5</meatMarketValue>
-      <foodType>OmnivoreAnimal, AnimalProduct</foodType>
-      <manhunterOnDamageChance>0.50</manhunterOnDamageChance>
-    </race>
-    <ingredient>
-      <mergeCompatibilityTags>
-        <li MayRequire="Ludeon.RimWorld.Ideology">InsectMeat</li>
-      </mergeCompatibilityTags>
-    </ingredient>
-    <receivesSignals>true</receivesSignals>
-    <comps>
-      <li Class="CompProperties_CanBeDormant" />
-      <li Class="CompProperties_WakeUpDormant">
-        <wakeUpOnDamage>true</wakeUpOnDamage>
-      </li>
-      <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
-	<hediffsToRemove>
-	  <li>Animal_Plague</li>
-	  <li>Animal_Flu</li>
-	  <li>AB_AnimalSporesAllergy</li>
-	</hediffsToRemove>
-	<tickInterval>2000</tickInterval>
-      </li>
-    </comps>
-  </ThingDef>
-
-  <!-- ====================================================== -->
-
-  <ThingDef ParentName="ISAInsect">
+  <ThingDef ParentName="BaseInsect">
     <defName>ISA_Evoscarab</defName>
     <label>evoscarab</label>
     <description>A large, genetically-engineered megascarab. Once the worker caste of an artificial ecosystem of insectoids designed to fight mechanoid invasions. It looks like a normal megascarab but some glittertech entusiast has genetically modified it before beening discovered and forced to shut down the operation yet some of these insectoids escaped and now roam the rim. It emits light as a byproduct of the chemical reaction that produce insect jelly</description>
@@ -115,6 +77,14 @@
      	<milkAmount>6</milkAmount>
     	<milkFemaleOnly>false</milkFemaleOnly>
       </li>
+      <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
+	<hediffsToRemove>
+	  <li>Animal_Plague</li>
+	  <li>Animal_Flu</li>
+	  <li>AB_AnimalSporesAllergy</li>
+	</hediffsToRemove>
+	<tickInterval>2000</tickInterval>
+      </li>
     </comps>
   </ThingDef>
   
@@ -169,7 +139,7 @@
   
   <!-- ====================================================== -->
 
-  <ThingDef ParentName="ISAInsect">
+  <ThingDef ParentName="BaseInsect">
     <defName>ISA_Evopede</defName>
     <label>evopede</label>
     <description>A medium-sized bioengineered insectoid the size of a sheep. The spelopede is the middle caste of a hive, taking care of most work tasks as well as fighting with its digging claws. It's dangerous in combat, but slow on open ground.  It looks like a normal spelopede but some glittertech entusiast has genetically modified it before beening discovered and forced to shut down the operation yet some of this insectoids escaped and now roam the rim. The experiments augmented their ability to fight making them stronger</description>
@@ -247,8 +217,16 @@
       <li>AnimalInsect</li>
     </tradeTags>
     <comps>
-	    <li Class="AnimalBehaviours.CompProperties_AcidImmunity">		
-	    </li>
+      <li Class="AnimalBehaviours.CompProperties_AcidImmunity">		
+      </li>
+      <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
+	<hediffsToRemove>
+	  <li>Animal_Plague</li>
+	  <li>Animal_Flu</li>
+	  <li>AB_AnimalSporesAllergy</li>
+	</hediffsToRemove>
+	<tickInterval>2000</tickInterval>
+      </li>
     </comps>
   </ThingDef>
 
@@ -302,7 +280,7 @@
   
   <!-- ====================================================== -->
 
-  <ThingDef ParentName="ISAInsect">
+  <ThingDef ParentName="BaseInsect">
     <defName>ISA_Evospider</defName>
     <label>evospider</label>
     <description>Not actually a spider, the megaspider is a genetically-engineered giant insectoid the size of a bear. Designed for heavy work and combat, its thick chitinous armor makes it hard to kill, while its long ripper-blades make it deadly at close quarters. It is, however, quite slow in open terrain.  It looks like a normal megaspider but some glittertech entusiast has genetically modified it before beening discovered and forced to shut down the operation yet some of this insectoids escaped and now roam the rim</description>
@@ -373,10 +351,13 @@
       <li>AnimalInsect</li>
     </tradeTags>
     <comps>
-      <li Class="CompProperties_Shearable">
-        <woolDef>ISA_SilkyBandages</woolDef>
-        <shearIntervalDays>3</shearIntervalDays>
-        <woolAmount>5</woolAmount>
+      <li Class="AnimalBehaviours.CompProperties_DiseaseImmunity">
+	<hediffsToRemove>
+	  <li>Animal_Plague</li>
+	  <li>Animal_Flu</li>
+	  <li>AB_AnimalSporesAllergy</li>
+	</hediffsToRemove>
+	<tickInterval>2000</tickInterval>
       </li>
 	    <li Class="AnimalBehaviours.CompProperties_DigPeriodically">
 		    <customThingToDig>			
