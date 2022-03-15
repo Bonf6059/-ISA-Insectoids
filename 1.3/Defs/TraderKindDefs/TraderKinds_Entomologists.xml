@@ -80,27 +80,27 @@
         
       <li Class="StockGenerator_SingleDef">
         <thingDef>Silver</thingDef>
-        <countRange>2500~4500</countRange>
+        <countRange>3500~5500</countRange>
       </li>
       
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineHerbal</thingDef>
-        <countRange>10~20</countRange>
+        <countRange>20~30</countRange>
       </li>
       
       <li Class="StockGenerator_SingleDef">
         <thingDef>MedicineIndustrial</thingDef>
-        <countRange>5~10</countRange>
+        <countRange>20~30</countRange>
       </li>
 
       <li Class="StockGenerator_SingleDef">
         <thingDef>InsectJelly</thingDef>
-        <countRange>-100~150</countRange>
+        <countRange>-100~300</countRange>
       </li>
       
       <li Class="StockGenerator_SingleDef">
         <thingDef>Chemfuel</thingDef>
-        <countRange>-300~70</countRange>
+        <countRange>-300~200</countRange>
       </li>
       
       <li Class="StockGenerator_Category">
@@ -109,8 +109,8 @@
           <li>EggsFertilized</li>
           <li>InsectJelly</li>
         </excludedCategories>
-        <thingDefCountRange>3~3</thingDefCountRange>
-        <totalPriceRange>150~800</totalPriceRange>
+        <thingDefCountRange>5~5</thingDefCountRange>
+        <totalPriceRange>350~900</totalPriceRange>
       </li>
       
       <li Class="StockGenerator_Category">
@@ -124,8 +124,8 @@
           <li>AnimalInsect</li>
           <li>ISAInsect</li>
         </tradeTagsSell>
-        <kindCountRange>2~4</kindCountRange>
-        <countRange>3~7</countRange>
+        <kindCountRange>3~5</kindCountRange>
+        <countRange>5~9</countRange>
       </li>
       <!-- Buying -->
       
