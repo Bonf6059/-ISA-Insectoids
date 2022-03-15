@@ -43,19 +43,19 @@
          <value>
            <li Class="StockGenerator_SingleDef">
              <thingDef>VFEI_DroneGenome</thingDef>
-             <countRange>1~8</countRange>
+             <countRange>1~5</countRange>
            </li>
            <li Class="StockGenerator_SingleDef">
              <thingDef>VFEI_WarriorGenome</thingDef>
-             <countRange>1~8</countRange>
+             <countRange>1~3</countRange>
            </li>
            <li Class="StockGenerator_SingleDef">
              <thingDef>VFEI_RoyalGenome</thingDef>
-             <countRange>1~8</countRange>
+             <countRange>0~2</countRange>
            </li>
            <li Class="StockGenerator_SingleDef">
              <thingDef>VFEI_BioengineeringIncubator</thingDef>
-             <countRange>0~2</countRange>
+             <countRange>0~1</countRange>
            </li>
          </value>		 
         </li>
