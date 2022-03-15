@@ -36,6 +36,31 @@
            </butcherProducts>
          </value>		 
         </li>
+	      
+	      
+        <li Class="PatchOperationAdd">
+         <xpath>/Defs/TraderKindDef[defName = "ISA_Orbital_Entomologists_Trader"]/stockGenerators</xpath>
+         <value>
+           <li Class="StockGenerator_SingleDef">
+             <thingDef>VFEI_DroneGenome</thingDef>
+             <countRange>1~8</countRange>
+           </li>
+           <li Class="StockGenerator_SingleDef">
+             <thingDef>VFEI_WarriorGenome</thingDef>
+             <countRange>1~8</countRange>
+           </li>
+           <li Class="StockGenerator_SingleDef">
+             <thingDef>VFEI_RoyalGenome</thingDef>
+             <countRange>1~8</countRange>
+           </li>
+           <li Class="StockGenerator_SingleDef">
+             <thingDef>VFEI_BioengineeringIncubator</thingDef>
+             <countRange>0~2</countRange>
+           </li>
+         </value>		 
+        </li>
+        
+        
       </operations>	  
     </match>		  
   </Operation>
