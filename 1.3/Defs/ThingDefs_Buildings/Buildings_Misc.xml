@@ -104,7 +104,7 @@
         <li>Production</li>
       </buildingTags>
     </building>
-    <tickerType>Rare</tickerType>
+    <tickerType>Normal</tickerType>
     <comps>
       <li Class="CompProperties_Forbiddable"/>
       <li Class="CompProperties_Refuelable">
