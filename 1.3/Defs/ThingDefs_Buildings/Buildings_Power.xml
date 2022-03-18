@@ -1,7 +1,8 @@
 <?xml version="1.0" encoding="utf-8" ?>
 <Defs>
 
-<defName>ISA_MiniSolarGenerator</defName>
+  <ThingDef ParentName="BuildingBase">
+  <defName>ISA_MiniSolarGenerator</defName>
     <label>mini solar generator</label>
     <description>Produces electricity from sunlight. Does not work in the dark or under artificial light. Due to it's small size it can be picked up and moved</description>
     <thingClass>Building</thingClass>
