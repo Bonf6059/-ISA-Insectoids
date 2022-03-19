@@ -51,7 +51,6 @@
         <checkTemperature>false</checkTemperature>
         <tradeTagsSell>
           <li>AnimalInsect</li>
-          <li>ISAInsect</li>
         </tradeTagsSell>
         <kindCountRange>2~4</kindCountRange>
         <countRange>2~6</countRange>
@@ -65,7 +64,6 @@
         <checkTemperature>false</checkTemperature>
         <tradeTagsBuy>
           <li>AnimalInsect</li>
-          <li>ISAInsect</li>
         </tradeTagsBuy>
       </li>
     </stockGenerators>
@@ -107,7 +105,6 @@
         <categoryDef>FoodRaw</categoryDef>
         <excludedCategories>
           <li>EggsFertilized</li>
-          <li>InsectJelly</li>
         </excludedCategories>
         <thingDefCountRange>5~5</thingDefCountRange>
         <totalPriceRange>350~900</totalPriceRange>
@@ -122,7 +119,6 @@
         <checkTemperature>false</checkTemperature>
         <tradeTagsSell>
           <li>AnimalInsect</li>
-          <li>ISAInsect</li>
         </tradeTagsSell>
         <kindCountRange>3~5</kindCountRange>
         <countRange>5~9</countRange>
@@ -136,7 +132,6 @@
         <checkTemperature>false</checkTemperature>
         <tradeTagsBuy>
           <li>AnimalInsect</li>
-          <li>ISAInsect</li>
         </tradeTagsBuy>
       </li>
     </stockGenerators>
