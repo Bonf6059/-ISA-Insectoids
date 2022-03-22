@@ -9,8 +9,6 @@ mod with better insectoids and more:
 - spelopede overhaul ✔
 - megaspider overhaul ✔
 - Prothesys ✔
-- Add spider silk bandages produced by EvoSpider (texture -> white herbal medine)
-- verify if leather amount = 0 create errors with VFEI patches
 - heating pad (heaters as floor tiles)?❌
 - new corpes decayer, acid immune, infecter bug (links below)?❌
 
