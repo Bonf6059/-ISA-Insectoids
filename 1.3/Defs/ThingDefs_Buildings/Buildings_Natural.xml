@@ -5,7 +5,7 @@
     <defName>ISA_ArtificialHive</defName>
     <label>artificial hive</label>
     <description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly.</description>
-    <designationCategory>Furniture</designationCategory>
+    <designationCategory>Production</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
       <li>BuildingsProduction</li>
@@ -32,7 +32,7 @@
     <pathCost>42</pathCost>
     <terrainAffordanceNeeded>Light</terrainAffordanceNeeded>
     <receivesSignals>false</receivesSignals>
-    <blockWind>true</blockWind>
+    <blockWind>false</blockWind>
     <tickerType>Normal</tickerType>
     <passability>PassThroughOnly</passability>
     <leaveResourcesWhenKilled>True</leaveResourcesWhenKilled>
