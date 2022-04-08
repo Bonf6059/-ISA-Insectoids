@@ -4,7 +4,7 @@
 <ThingDef ParentName="BuildingBase">
     <defName>ISA_ArtificialHive</defName>
     <label>artificial hive</label>
-    <description>A hive of giant insects. If activated, it will spawn additional insects and hives over time, as well as valuable insect jelly.</description>
+    <description>An artificial hive made to resemble a natural hive. It will attract very small insects, too small to see, that will produce valuable insect jelly.</description>
     <designationCategory>Production</designationCategory>
     <minifiedDef>MinifiedThing</minifiedDef>
     <thingCategories>
