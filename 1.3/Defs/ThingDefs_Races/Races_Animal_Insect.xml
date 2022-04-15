@@ -227,8 +227,6 @@
 	</hediffsToRemove>
 	<tickInterval>2000</tickInterval>
       </li>
-      <li Class="AnimalBehaviours.CompProperties_Draftable">
-      </li>
     </comps>
   </ThingDef>
 
