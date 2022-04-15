@@ -228,7 +228,6 @@
 	<tickInterval>2000</tickInterval>
       </li>
       <li Class="AnimalBehaviours.CompProperties_Draftable">
-	<makeNonFleeingToo>true</makeNonFleeingToo>
       </li>
     </comps>
   </ThingDef>
