@@ -286,7 +286,7 @@
   <ThingDef ParentName="BaseInsect">
     <defName>ISA_Evospider</defName>
     <label>evospider</label>
-    <description>Not actually a spider, the evospider is a genetically-engineered giant insectoid the size of a bear. Designed for heavy work and combat, its thick chitinous armor makes it hard to kill, while its long ripper-blades make it deadly at close quarters. It is, however, quite slow in open terrain. It looks like a normal megaspider but some glittertech entusiast has genetically modified it before beening discovered and forced to shut down the operation yet some of this insectoids escaped and now roam the rim. This Evospider looks smarter than other insectoids.</description>
+    <description>Not actually a spider, the evospider is a genetically-engineered giant insectoid the size of a bear. Designed for heavy work and combat, its thick chitinous armor makes it hard to kill, while its long ripper-blades make it deadly at close quarters. It is, however, quite slow in open terrain.  It looks like a normal megaspider but some glittertech entusiast has genetically modified it before beening discovered and forced to shut down the operation yet some of this insectoids escaped and now roam the rim</description>
     <statBases>
       <MoveSpeed>3.60</MoveSpeed>
       <ComfyTemperatureMin>-40</ComfyTemperatureMin>
@@ -362,13 +362,73 @@
 	</hediffsToRemove>
 	<tickInterval>2000</tickInterval>
       </li>
-      <li Class="AnimalBehaviours.CompProperties_DigPeriodically">
-	<digBiomeRocks>true</digBiomeRocks>
-	<ticksToDig>15000</ticksToDig>
-      </li>
-      <li Class="AnimalBehaviours.CompProperties_Draftable">
-	<makeNonFleeingToo>true</makeNonFleeingToo>
-      </li>
+	    <li Class="AnimalBehaviours.CompProperties_DigPeriodically">
+		    <customThingToDig>			
+		      	<li>ChunkSandstone</li>
+		      	<li>ChunkGranite</li>
+		      	<li>ChunkLimestone</li>
+		      	<li>ChunkSlate</li>
+		      	<li>ChunkMarble</li>
+		      	<li>ChunkSandstone</li>
+		      	<li>ChunkGranite</li>
+		      	<li>ChunkLimestone</li>
+		      	<li>ChunkSlate</li>
+		      	<li>ChunkMarble</li>
+		      	<li>ChunkSandstone</li>
+		      	<li>ChunkGranite</li>
+		      	<li>ChunkLimestone</li>
+		      	<li>ChunkSlate</li>
+		      	<li>ChunkMarble</li>
+		      	<li>ChunkSandstone</li>
+		      	<li>ChunkGranite</li>
+		      	<li>ChunkLimestone</li>
+		      	<li>ChunkSlate</li>
+		      	<li>ChunkMarble</li>
+		      	<li>ChunkSandstone</li>
+		      	<li>ChunkGranite</li>
+		      	<li>ChunkLimestone</li>
+		      	<li>ChunkSlate</li>
+		      	<li>Steel</li>
+		      	<li>Steel</li>
+	      		<li>Jade</li>
+		      	<li>Gold</li>
+		      	<li>Plasteel</li>
+			<li>Silver</li>			
+		    </customThingToDig>
+		    <customAmountToDig>				
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		      	<li>1</li>
+		        <li>1</li>
+		      	<li>1</li>
+		        <li>1</li>
+			<li>25</li>
+		        <li>25</li>
+			<li>10</li>
+			<li>10</li>
+		        <li>10</li>
+			<li>10</li>		
+		    </customAmountToDig>
+		    <ticksToDig>15000</ticksToDig>
+	    </li>
     </comps>
   </ThingDef>
 
