@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  <TraitDef>
+    <defName>InsectEater</defName>
+    <commonality>0.7</commonality>
+    <degreeDatas>
+      <li>
+        <label>insect meat enjoyer</label>
+        <description>[PAWN_nameDef] doesn't mind the strange taste of insects. Infact [PAWN_nameDef] considers theirself to be a connoisseur of insect meat.</description>
+        <disallowedThoughtsFromIngestion>
+          <li>
+            <meatSource>Insect</meatSource>
+            <thoughts>
+              <li>AteRawFood</li>
+              <li>AteInsectMeatDirect</li>
+              <li>AteInsectMeatAsIngredient</li>
+            </thoughts>
+          </li>
+        </disallowedThoughtsFromIngestion>
+        <extraThoughtsFromIngestion>
+          <li>
+            <meatSource>Insect</meatSource>
+            <thoughtsDirect>
+              <li>AteInsectMeat_Loved</li>
+            </thoughtsDirect>
+            <thoughtsAsIngredient>
+              <li>AteInsectMeatAsIngredient_Loved</li>
+            </thoughtsAsIngredient>
+          </li>
+        </extraThoughtsFromIngestion>
+      </li>
+    </degreeDatas>
+  </TraitDef>
+</Defs>
