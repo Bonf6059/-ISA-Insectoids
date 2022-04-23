@@ -426,6 +426,12 @@
 		    </customAmountToDig>
 		    <ticksToDig>15000</ticksToDig>
 	    </li>
+	    <li Class="CompProperties_Milkable">
+             <milkDef>ISA_SilkyStrings</milkDef>
+             <milkIntervalDays>15</milkIntervalDays>
+             <milkAmount>10</milkAmount>
+             <milkFemaleOnly>false</milkFemaleOnly>
+           </li>
     </comps>
   </ThingDef>
 
