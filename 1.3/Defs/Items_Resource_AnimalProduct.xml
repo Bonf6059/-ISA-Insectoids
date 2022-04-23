@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+  
+  <ThingDef ParentName="MedicineBase">
+    <defName>ISA_SilkyStrings</defName>
+    <label>silky strings</label>
+    <description>A bundle of strings soft to the touch but resistant to tearing. It is produced by an insectoid from an another rimworld, there are rumors that some tribe on this planet has tamed these insectoids. It is possible to use them as a bandage to stop bleeding and heal other injuries. It is less potent than industrial pharmaceuticals, but much better than nothing.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicineHerbal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <MaxHitPoints>150</MaxHitPoints>
+      <MarketValue>7</MarketValue>
+      <Mass>0.030</Mass>
+      <Flammability>1.3</Flammability>
+      <DeteriorationRate>4</DeteriorationRate>
+      <StuffPower_Armor_Sharp>0.06</StuffPower_Armor_Sharp>
+      <StuffPower_Armor_Blunt>0.03</StuffPower_Armor_Blunt>
+      <StuffPower_Armor_Heat>0.1</StuffPower_Armor_Heat>
+      <StuffPower_Insulation_Cold>6</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>6</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <categories>
+        <li>Fabric</li>
+      </categories>
+      <commonality>0</commonality>
+      <color>(217, 159, 45)</color>
+      <statFactors>
+        <Flammability>2</Flammability>
+        <MaxHitPoints>0.5</MaxHitPoints>
+	<Beauty>2</Beauty>
+      </statFactors>
+    </stuffProps>
+    <thingCategories>
+      <li>Textiles</li>
+    </thingCategories>
+    <tradeability>Sellable</tradeability>
+  </ThingDef>
+</Defs>
