@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<Defs>
+
+  <!--=============== Medicine ====================-->
+
+  <ThingDef ParentName="MedicineBase">
+    <defName>ISA_Bandages</defName>
+    <label>disinfected bandages</label>
+    <description>A pack of disinfected bandages. It is less potent than industrial pharmaceuticals, but it is a good middle ground between herbal medicine and industrial.</description>
+    <graphicData>
+      <texPath>Things/Item/Resource/Medicine/MedicineHerbal</texPath>
+      <graphicClass>Graphic_StackCount</graphicClass>
+      <drawSize>0.85</drawSize>
+    </graphicData>
+    <techLevel>Neolithic</techLevel>
+    <statBases>
+      <MarketValue>15</MarketValue>
+      <Mass>0.35</Mass>
+      <Flammability>1.3</Flammability>
+      <MedicalPotency>0.60</MedicalPotency>
+      <MedicalQualityMax>0.90</MedicalQualityMax>
+      <DeteriorationRate>3</DeteriorationRate>
+      <WorkToMake>700</WorkToMake>
+    </statBases>
+    <tickerType>Rare</tickerType>
+    <comps>
+      <li Class="CompProperties_Rottable">
+        <daysToRotStart>150</daysToRotStart>
+        <rotDestroys>true</rotDestroys>
+      </li>
+    </comps>
+    <costList>
+      <MedicineHerbal>1</MedicineHerbal>
+      <ISA_SilkyStrings>2</ISA_SilkyStrings>
+    </costList>
+    <recipeMaker>
+      <workSpeedStat>DrugSynthesisSpeed</workSpeedStat>
+      <workSkill>Intellectual</workSkill>
+      <recipeUsers>
+        <li>DrugLab</li>
+      </recipeUsers>
+      <skillRequirements>
+        <Crafting>2</Crafting>
+        <Intellectual>2</Intellectual>
+      </skillRequirements>
+    </recipeMaker>
+    <allowedArchonexusCount>20</allowedArchonexusCount>
+  </ThingDef>
+      
+</Defs>
