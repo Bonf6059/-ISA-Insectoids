@@ -9,13 +9,6 @@
   </Operation>
   
     <Operation Class="PatchOperationReplace">
-    <xpath>/Defs/ThingDef[defName="Milk"]/graphicData/texPath</xpath>
-    <value>
-      <texPath>Honey</texPath>
-    </value>
-  </Operation>
-  
-    <Operation Class="PatchOperationReplace">
     <xpath>/Defs/ThingDef[defName="Chocolate"]/graphicData/texPath</xpath>
     <value>
       <texPath>HoneyComb</texPath>
