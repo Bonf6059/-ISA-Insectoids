@@ -8,7 +8,7 @@
     <label>disinfected bandages</label>
     <description>A pack of disinfected bandages. It is less potent than industrial pharmaceuticals, but it is a good middle ground between herbal medicine and industrial.</description>
     <graphicData>
-      <texPath>Bandages</texPath>
+      <texPath>Things/Item/Resource/Bandages</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>0.85</drawSize>
     </graphicData>
