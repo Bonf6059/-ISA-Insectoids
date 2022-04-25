@@ -40,30 +40,4 @@
     </thingCategories>
     <tradeability>Sellable</tradeability>
   </ThingDef>
-	
-  <ThingDef ParentName="OrganicProductBase">
-    <defName>ISA_Honey</defName>
-    <label>honey</label>
-    <description>honey from an insectoid.</description>
-    <graphicData>
-      <texPath>Things/Item/Resource/Honey/Honey</texPath>
-    </graphicData>
-    <socialPropernessMatters>true</socialPropernessMatters>
-    <statBases>
-      <MarketValue>4.5</MarketValue> <!-- Can be used like meat in recipes -->
-      <Mass>0.045</Mass>
-      <MaxHitPoints>60</MaxHitPoints>
-      <Flammability>0.2</Flammability>
-      <Nutrition>0.09</Nutrition>
-      <FoodPoisonChanceFixedHuman>0.01</FoodPoisonChanceFixedHuman>
-    </statBases>
-    <ingestible>
-      <preferability>RawTasty</preferability>
-      <foodType>AnimalProduct, Fluid</foodType>
-    </ingestible>
-    <thingCategories>
-      <li>AnimalProductRaw</li>
-    </thingCategories>
-    <allowedArchonexusCount>80</allowedArchonexusCount>
-  </ThingDef>
 </Defs>
