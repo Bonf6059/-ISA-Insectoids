@@ -6,7 +6,7 @@
     <label>silky strings</label>
     <description>A bundle of strings soft to the touch but resistant to tearing. It is produced by an insectoid from an another rimworld, there are rumors that some tribe on this planet has tamed these insectoids. It is possible to use them as a bandage to stop bleeding and heal other injuries. It is less potent than industrial pharmaceuticals, but much better than nothing.</description>
     <graphicData>
-      <texPath>Things/Item/Resource/Medicine/MedicineHerbal</texPath>
+      <texPath>SilkyString</texPath>
       <graphicClass>Graphic_StackCount</graphicClass>
       <drawSize>0.85</drawSize>
     </graphicData>
