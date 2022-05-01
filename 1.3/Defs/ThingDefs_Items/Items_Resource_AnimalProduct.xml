@@ -38,6 +38,5 @@
     <thingCategories>
       <li>Textiles</li>
     </thingCategories>
-    <tradeability>Sellable</tradeability>
   </ThingDef>
 </Defs>
