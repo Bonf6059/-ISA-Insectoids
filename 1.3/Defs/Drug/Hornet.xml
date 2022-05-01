@@ -19,7 +19,7 @@
     </graphicData>
     <rotatable>false</rotatable>
     <statBases>
-      <WorkToMake>300</WorkToMake>
+      <WorkToMake>450</WorkToMake>
       <MarketValue>50</MarketValue>
       <Mass>0.05</Mass>
     </statBases>
